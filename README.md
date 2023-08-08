@@ -1,2 +1,5 @@
 # CryptoClustering
-test
+
+I was able to refer entirely to the module for this challenge.  I noticed that using K-Means with and without the PCA data resulted in the same elbow or number of clusters; however, the PCA elbow curve produced a much sharper elbow curve. After visual inspection of the scatter of the PCA data, we see two outliers with their own clusters. This may contribute to overtraining the data, so it might be best practice to consolidate those into the other two larger clusters for a more accurately predicted model. 
+
+I thought I got this finding by error. After getting to the end, the line of questioning implied that I could have arrived at two different elbows, so I thought I might be using the wrong variables for the PCA data fit and loop. I updated the PCA variables and still got the same result, so I think I'm getting the right output. I could have chosen a higher amount of clusters for the non-PCA approach, but it still seems like both of the elbows are firmly at 4 clusters. 
